@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#641f2b">
+  <meta name="description" content="Katalog digital Ani & Datuak. Informasi produk dan pemesanan akan diperbarui setelah dikonfirmasi.">
+  <title>Ani & Datuak — Busana Bernilai Budaya</title>
+
+  <style>
+    :root {
+      --maroon: #641f2b;
+      --maroon-dark: #42141d;
+      --cream: #f8f3e9;
+      --gold: #c8a45d;
+      --ink: #211d1b;
+      --muted: #746c65;
+      --white: #fffdf9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    .top-note {
+      background: var(--maroon-dark);
+      color: var(--cream);
+      text-align: center;
+      padding: 8px 16px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e9dfd0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--maroon);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 1.15;
+    }
+
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font: 10px Arial, sans-serif;
+      letter-spacing: 2px;
+      margin-top: 5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--maroon);
+    }
+
+    .button {
+      display: inline-block;
+      border: 1px solid var(--maroon);
+      background: var(--maroon);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .button:hover {
+      background: var(--maroon-dark);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--maroon);
+    }
+
+    .button-outline:hover {
+      color: white;
+    }
+
+    .hero {
+      padding: 78px 0;
+      background:
+        radial-gradient(ellipse at 90% 20%, #ead9bd 0, transparent 38%),
+        linear-gradient(120deg, #f8f3e9, #f0e5d5);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 56px;
+    }
+
+    .eyebrow {
+      color: var(--maroon);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 60px);
+      max-width: 590px;
+      margin-bottom: 22px;
+    }
+
+    h1 span {
+      color: var(--maroon);
+    }
+
+    .hero-copy {
+      color: var(--muted);
+      max-width: 490px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-art {
+      min-height: 350px;
+      border: 1px solid #d6c3a0;
+      outline: 1px solid #d6c3a0;
+      outline-offset: -12px;
+      background: var(--maroon);
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      position: relative;
+    }
+
+    .hero-art::before,
+    .hero-art::after {
+      content: "✦";
+      position: absolute;
+      color: var(--gold);
+      font-size: 30px;
+    }
+
+    .hero-art::before {
+      top: 28px;
+      left: 32px;
+    }
+
+    .hero-art::after {
+      bottom: 28px;
+      right: 32px;
+    }
+
+    .hero-art strong {
+      display: block;
+      font: bold 34px Georgia, serif;
+      margin-bottom: 12px;
+    }
+
+    .hero-art p {
+      font-size: 13px;
+      color: #e9d9bb;
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 34px;
+    }
+
+    .section-heading h2 {
+      color: var(--maroon);
+      font-size: clamp(30px, 4vw, 42px);
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .catalog-tools {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      padding: 12px 14px;
+      border: 1px solid #d9cdbd;
+      border-radius: 4px;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+
+    .filter-button {
+      border: 1px solid #d9cdbd;
+      color: var(--ink);
+      background: var(--white);
+      padding: 9px 15px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .filter-button.active,
+    .filter-button:hover {
+      background: var(--maroon);
+      border-color: var(--maroon);
+      color: white;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .product-card {
+      background: var(--white);
+      border: 1px solid #e9dfd0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .product-photo {
+      min-height: 210px;
+      background: #eee4d5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      color: var(--maroon);
+    }
+
+    .photo-placeholder {
+      border: 1px dashed #bca57e;
+      padding: 28px 16px;
+      width: 100%;
+      font-size: 13px;
+    }
+
+    .photo-placeholder span {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-category {
+      color: var(--maroon);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 10px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .product-info h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .product-info p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .price-pending {
+      display: inline-block;
+      background: #f3ead8;
+      color: #735c31;
+      border-radius: 3px;
+      padding: 5px 9px;
+      font-size: 12px;
+    }
+
+    .empty-result {
+      grid-column: 1 / -1;
+      padding: 30px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .about {
+      background: var(--maroon-dark);
+      color: var(--cream);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-mark {
+      border: 1px solid var(--gold);
+      padding: 42px 20px;
+      text-align: center;
+    }
+
+    .about-mark strong {
+      display: block;
+      font: bold 36px Georgia, serif;
+      color: var(--gold);
+    }
+
+    .about-mark span {
+      font-size: 11px;
+      letter-spacing: 3px;
+    }
+
+    .about h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #e0d4c7;
+      margin-bottom: 14px;
+    }
+
+    .pending-note {
+      margin-top: 20px;
+      padding: 13px 16px;
+      border-left: 3px solid var(--gold);
+      background: #ffffff0d;
+      font-size: 13px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid #e9dfd0;
+      padding: 26px;
+      border-radius: 5px;
+    }
+
+    .contact-card .symbol {
+      color: var(--maroon);
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      font-size: 13px;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      background: #211719;
+      color: #e9dfd0;
+      padding: 30px 0;
+      font-size: 12px;
+    }
+
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      font: bold 22px Georgia, serif;
+      color: var(--gold);
+    }
+
+    @media (max-width: 760px) {
+      .navbar {
+        padding: 16px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        font-size: 13px;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        padding: 50px 0;
+      }
+
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .hero-art {
+        min-height: 240px;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+
+      .product-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-photo {
+        min-height: 190px;
+      }
+
+      .about h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-note">
+    KATALOG DIGITAL ANI & DATUAK · DATA PRODUK SEDANG DIPERSIAPKAN
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="#beranda">
+        Ani & Datuak
+        <small>BUSANA · BUDAYA · IDENTITAS</small>
+      </a>
+
+      <nav aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#produk">Katalog</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+        <a class="button nav-cta" href="#kontak">Hubungi Kami</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Warisan dalam balutan gaya</p>
+          <h1>Mengenal Budaya, <span>Melalui Busana.</span></h1>
+          <p class="hero-copy">
+            Selamat datang di katalog digital Ani & Datuak.
+            Temukan informasi tentang koleksi busana dan identitas
+            usaha kami. Detail koleksi akan diperbarui setelah
+            dikonfirmasi oleh pemilik UMKM.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#produk">Jelajahi Katalog</a>
+            <a class="button button-outline" href="#tentang">Tentang Usaha</a>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img"
+             aria-label="Area visual identitas Ani & Datuak">
+          <div>
+            <strong>Ani & Datuak</strong>
+            <p>RUANG UNTUK IDENTITAS VISUAL DAN FOTO ASLI USAHA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produk">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Koleksi kami</p>
+          <h2>Katalog Produk</h2>
+          <p>
+            Cari produk berdasarkan nama atau kategori.
+            Informasi produk asli akan ditambahkan setelah diverifikasi.
+          </p>
+        </div>
+
+        <div class="catalog-tools">
+          <input
+            class="search-box"
+            id="searchInput"
+            type="search"
+            placeholder="Cari produk..."
+            aria-label="Cari produk"
+          >
+        </div>
+
+        <div class="filters" id="filterButtons">
+          <button class="filter-button active" data-category="semua">
+            Semua Produk
+          </button>
+          <button class="filter-button" data-category="pakaian">
+            Pakaian
+          </button>
+          <button class="filter-button" data-category="aksesoris">
+            Aksesori
+          </button>
+          <button class="filter-button" data-category="lainnya">
+            Lainnya
+          </button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <article class="product-card" data-category="pakaian">
+            <div class="product-photo">
+              <div class="photo-placeholder">
+                <span>◇</span>
+                FOTO PRODUK ASLI
+                <br>Menunggu dari pemilik UMKM
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-category">Pakaian</div>
+              <h3>Produk akan ditambahkan</h3>
+              <p>
+                Nama, deskripsi, dan detail produk menunggu konfirmasi.
+              </p>
+              <span class="price-pending">Harga menunggu konfirmasi</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="aksesoris">
+            <div class="product-photo">
+              <div class="photo-placeholder">
+                <span>◇</span>
+                FOTO PRODUK ASLI
+                <br>Menunggu dari pemilik UMKM
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-category">Aksesori</div>
+              <h3>Produk akan ditambahkan</h3>
+              <p>
+                Nama, deskripsi, dan detail produk menunggu konfirmasi.
+              </p>
+              <span class="price-pending">Harga menunggu konfirmasi</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="lainnya">
+            <div class="product-photo">
+              <div class="photo-placeholder">
+                <span>◇</span>
+                FOTO PRODUK ASLI
+                <br>Menunggu dari pemilik UMKM
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-category">Lainnya</div>
+              <h3>Produk akan ditambahkan</h3>
+              <p>
+                Nama, deskripsi, dan detail produk menunggu konfirmasi.
+              </p>
+              <span class="price-pending">Harga menunggu konfirmasi</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="tentang">
+      <div class="container about-grid">
+        <div class="about-mark">
+          <strong>A&D</strong>
+          <span>ANI & DATUAK</span>
+        </div>
+
+        <div>
+          <p class="eyebrow" style="color: var(--gold)">
+            Mengenal lebih dekat
+          </p>
+          <h2>Cerita Ani & Datuak</h2>
+          <p>
+            Bagian ini akan menjelaskan profil, perjalanan usaha,
+            nilai budaya, dan keunikan Ani & Datuak berdasarkan
+            informasi langsung dari pemilik usaha.
+          </p>
+          <div class="pending-note">
+            Status: cerita dan profil usaha masih menunggu konfirmasi.
+            Informasi belum akan ditampilkan sebagai fakta resmi.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Terhubung dengan kami</p>
+          <h2>Informasi & Kontak</h2>
+          <p>
+            Detail kontak dan lokasi resmi akan dimasukkan setelah
+            dikonfirmasi oleh pemilik Ani & Datuak.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="symbol">✆</div>
+            <h3>WhatsApp</h3>
+            <p>Nomor WhatsApp bisnis menunggu konfirmasi.</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="symbol">⌖</div>
+            <h3>Lokasi Usaha</h3>
+            <p>Alamat dan tautan peta menunggu konfirmasi.</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="symbol">◇</div>
+            <h3>Media Sosial</h3>
+            <p>Akun resmi usaha menunggu konfirmasi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>
+        <div class="footer-brand">Ani & Datuak</div>
+        <p>Katalog digital untuk mendukung UMKM.</p>
+      </div>
+      <p>© <span id="year"></span> Ani & Datuak</p>
+    </div>
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const filterButtons = document.querySelectorAll(".filter-button");
+    const productGrid = document.getElementById("productGrid");
+    const products = Array.from(
+      productGrid.querySelectorAll(".product-card")
+    );
+
+    let selectedCategory = "semua";
+
+    function filterProducts() {
+      const keyword = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      products.forEach((product) => {
+        const text = product.textContent.toLowerCase();
+        const category = product.dataset.category;
+
+        const matchesKeyword = text.includes(keyword);
+        const matchesCategory =
+          selectedCategory === "semua" ||
+          category === selectedCategory;
+
+        const visible = matchesKeyword && matchesCategory;
+        product.hidden = !visible;
+
+        if (visible) visibleCount++;
+      });
+
+      const oldMessage = productGrid.querySelector(".empty-result");
+
+      if (oldMessage) oldMessage.remove();
+
+      if (visibleCount === 0) {
+        const message = document.createElement("p");
+        message.className = "empty-result";
+        message.textContent =
+          "Tidak ada produk yang cocok. Coba kata kunci atau kategori lain.";
+        productGrid.appendChild(message);
+      }
+    }
+
+    searchInput.addEventListener("input", filterProducts);
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        selectedCategory = button.dataset.category;
+
+        filterButtons.forEach((item) => {
+          item.classList.toggle("active", item === button);
+        });
+
+        filterProducts();
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
