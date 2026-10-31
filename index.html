@@ -1,13 +1,9 @@
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
+<!DOCTYPE html><html lang="id"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#641f2b">
-  <meta name="description" content="Katalog digital Ani & Datuak. Informasi produk dan pemesanan akan diperbarui setelah dikonfirmasi.">
-  <title>Ani & Datuak — Busana Bernilai Budaya</title>
-
+  <meta name="description" content="Katalog digital Ani &amp; Datuak. Informasi produk dan pemesanan akan diperbarui setelah dikonfirmasi.">
+  <title>Ani &amp; Datuak — Busana Bernilai Budaya</title>
   <style>
     :root {
       --maroon: #641f2b;
@@ -18,38 +14,31 @@
       --muted: #746c65;
       --white: #fffdf9;
     }
-
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     html {
       scroll-behavior: smooth;
     }
-
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: var(--cream);
       color: var(--ink);
       line-height: 1.6;
     }
-
     a {
       color: inherit;
       text-decoration: none;
     }
-
     button, input {
       font: inherit;
     }
-
     .container {
       width: min(1120px, 90%);
       margin: auto;
     }
-
     .top-note {
       background: var(--maroon-dark);
       color: var(--cream);
@@ -58,7 +47,6 @@
       font-size: 12px;
       letter-spacing: 0.5px;
     }
-
     header {
       background: var(--white);
       border-bottom: 1px solid #e9dfd0;
@@ -66,7 +54,6 @@
       top: 0;
       z-index: 10;
     }
-
     .navbar {
       min-height: 76px;
       display: flex;
@@ -74,7 +61,6 @@
       justify-content: space-between;
       gap: 24px;
     }
-
     .brand {
       color: var(--maroon);
       font-family: Georgia, "Times New Roman", serif;
@@ -82,7 +68,6 @@
       font-weight: bold;
       line-height: 1.15;
     }
-
     .brand small {
       display: block;
       color: var(--muted);
@@ -90,18 +75,15 @@
       letter-spacing: 2px;
       margin-top: 5px;
     }
-
     nav {
       display: flex;
       align-items: center;
       gap: 26px;
       font-size: 14px;
     }
-
     nav a:hover {
       color: var(--maroon);
     }
-
     .button {
       display: inline-block;
       border: 1px solid var(--maroon);
@@ -114,34 +96,28 @@
       font-weight: bold;
       font-size: 14px;
     }
-
     .button:hover {
       background: var(--maroon-dark);
     }
-
     .button-outline {
       background: transparent;
       color: var(--maroon);
     }
-
     .button-outline:hover {
       color: white;
     }
-
     .hero {
       padding: 78px 0;
       background:
         radial-gradient(ellipse at 90% 20%, #ead9bd 0, transparent 38%),
         linear-gradient(120deg, #f8f3e9, #f0e5d5);
     }
-
     .hero-grid {
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
       align-items: center;
       gap: 56px;
     }
-
     .eyebrow {
       color: var(--maroon);
       text-transform: uppercase;
@@ -150,34 +126,28 @@
       font-weight: bold;
       margin-bottom: 18px;
     }
-
     h1, h2, h3 {
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.2;
     }
-
     h1 {
       font-size: clamp(38px, 5vw, 60px);
       max-width: 590px;
       margin-bottom: 22px;
     }
-
     h1 span {
       color: var(--maroon);
     }
-
     .hero-copy {
       color: var(--muted);
       max-width: 490px;
       margin-bottom: 28px;
     }
-
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
     }
-
     .hero-art {
       min-height: 350px;
       border: 1px solid #d6c3a0;
@@ -192,7 +162,6 @@
       padding: 40px;
       position: relative;
     }
-
     .hero-art::before,
     .hero-art::after {
       content: "✦";
@@ -200,56 +169,46 @@
       color: var(--gold);
       font-size: 30px;
     }
-
     .hero-art::before {
       top: 28px;
       left: 32px;
     }
-
     .hero-art::after {
       bottom: 28px;
       right: 32px;
     }
-
     .hero-art strong {
       display: block;
       font: bold 34px Georgia, serif;
       margin-bottom: 12px;
     }
-
     .hero-art p {
       font-size: 13px;
       color: #e9d9bb;
     }
-
     .section {
       padding: 76px 0;
     }
-
     .section-heading {
       text-align: center;
       max-width: 640px;
       margin: 0 auto 34px;
     }
-
     .section-heading h2 {
       color: var(--maroon);
       font-size: clamp(30px, 4vw, 42px);
       margin-bottom: 12px;
     }
-
     .section-heading p {
       color: var(--muted);
       font-size: 14px;
     }
-
     .catalog-tools {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-bottom: 28px;
     }
-
     .search-box {
       flex: 1;
       min-width: 220px;
@@ -259,14 +218,12 @@
       background: var(--white);
       color: var(--ink);
     }
-
     .filters {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 28px;
     }
-
     .filter-button {
       border: 1px solid #d9cdbd;
       color: var(--ink);
@@ -276,27 +233,23 @@
       cursor: pointer;
       font-size: 13px;
     }
-
     .filter-button.active,
     .filter-button:hover {
       background: var(--maroon);
       border-color: var(--maroon);
       color: white;
     }
-
     .product-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 24px;
     }
-
     .product-card {
       background: var(--white);
       border: 1px solid #e9dfd0;
       border-radius: 5px;
       overflow: hidden;
     }
-
     .product-photo {
       min-height: 210px;
       background: #eee4d5;
@@ -307,24 +260,20 @@
       padding: 25px;
       color: var(--maroon);
     }
-
     .photo-placeholder {
       border: 1px dashed #bca57e;
       padding: 28px 16px;
       width: 100%;
       font-size: 13px;
     }
-
     .photo-placeholder span {
       display: block;
       font-size: 30px;
       margin-bottom: 8px;
     }
-
     .product-info {
       padding: 20px;
     }
-
     .product-category {
       color: var(--maroon);
       text-transform: uppercase;
@@ -333,18 +282,15 @@
       font-weight: bold;
       margin-bottom: 8px;
     }
-
     .product-info h3 {
       font-size: 21px;
       margin-bottom: 8px;
     }
-
     .product-info p {
       color: var(--muted);
       font-size: 13px;
       margin-bottom: 16px;
     }
-
     .price-pending {
       display: inline-block;
       background: #f3ead8;
@@ -353,53 +299,44 @@
       padding: 5px 9px;
       font-size: 12px;
     }
-
     .empty-result {
       grid-column: 1 / -1;
       padding: 30px;
       text-align: center;
       color: var(--muted);
     }
-
     .about {
       background: var(--maroon-dark);
       color: var(--cream);
     }
-
     .about-grid {
       display: grid;
       grid-template-columns: 0.8fr 1.2fr;
       gap: 50px;
       align-items: center;
     }
-
     .about-mark {
       border: 1px solid var(--gold);
       padding: 42px 20px;
       text-align: center;
     }
-
     .about-mark strong {
       display: block;
       font: bold 36px Georgia, serif;
       color: var(--gold);
     }
-
     .about-mark span {
       font-size: 11px;
       letter-spacing: 3px;
     }
-
     .about h2 {
       font-size: 38px;
       margin-bottom: 20px;
     }
-
     .about p {
       color: #e0d4c7;
       margin-bottom: 14px;
     }
-
     .pending-note {
       margin-top: 20px;
       padding: 13px 16px;
@@ -407,44 +344,37 @@
       background: #ffffff0d;
       font-size: 13px;
     }
-
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 20px;
     }
-
     .contact-card {
       background: var(--white);
       border: 1px solid #e9dfd0;
       padding: 26px;
       border-radius: 5px;
     }
-
     .contact-card .symbol {
       color: var(--maroon);
       font-size: 24px;
       margin-bottom: 12px;
     }
-
     .contact-card h3 {
       font-size: 20px;
       margin-bottom: 8px;
     }
-
     .contact-card p {
       font-size: 13px;
       color: var(--muted);
       overflow-wrap: anywhere;
     }
-
     footer {
       background: #211719;
       color: #e9dfd0;
       padding: 30px 0;
       font-size: 12px;
     }
-
     .footer-row {
       display: flex;
       align-items: center;
@@ -452,12 +382,10 @@
       gap: 16px;
       flex-wrap: wrap;
     }
-
     .footer-brand {
       font: bold 22px Georgia, serif;
       color: var(--gold);
     }
-
     @media (max-width: 760px) {
       .navbar {
         padding: 16px 0;
@@ -465,122 +393,91 @@
         flex-direction: column;
         gap: 14px;
       }
-
       nav {
         gap: 15px;
         flex-wrap: wrap;
         font-size: 13px;
       }
-
       .nav-cta {
         display: none;
       }
-
       .hero {
         padding: 50px 0;
       }
-
       .hero-grid,
       .about-grid {
         grid-template-columns: 1fr;
         gap: 30px;
       }
-
       .hero-art {
         min-height: 240px;
       }
-
       .section {
         padding: 55px 0;
       }
-
       .product-grid,
       .contact-grid {
         grid-template-columns: 1fr;
       }
-
       .product-photo {
         min-height: 190px;
       }
-
       .about h2 {
         font-size: 32px;
       }
     }
   </style>
 </head>
-
 <body>
-  <div class="top-note">
-    KATALOG DIGITAL ANI & DATUAK · DATA PRODUK SEDANG DIPERSIAPKAN
-  </div>
-
+  <div class="top-note"><br></div>
   <header>
     <div class="container navbar">
       <a class="brand" href="#beranda">
-        Ani & Datuak
-        <small>BUSANA · BUDAYA · IDENTITAS</small>
+        Ani &amp; Datuak
+        <small><br></small>
       </a>
-
       <nav aria-label="Navigasi utama">
-        <a href="#beranda">Beranda</a>
-        <a href="#produk">Katalog</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#kontak">Kontak</a>
+        <a href="#beranda" class="">Beranda</a>
+        <a href="#produk" class="">Katalog</a>
+        <a href="#tentang" class="">Tentang</a>
+        <a href="#kontak" class="">Kontak</a>
         <a class="button nav-cta" href="#kontak">Hubungi Kami</a>
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero" id="beranda">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Warisan dalam balutan gaya</p>
-          <h1>Mengenal Budaya, <span>Melalui Busana.</span></h1>
+          <p class="eyebrow">&nbsp;Warisan dalam balutan gaya</p>
+          <h1 class="">Mengenal Budaya, <span class="">Melalui Busana.</span></h1>
           <p class="hero-copy">
-            Selamat datang di katalog digital Ani & Datuak.
+            Selamat datang di katalog digital Ani &amp; Datuak.
             Temukan informasi tentang koleksi busana dan identitas
-            usaha kami. Detail koleksi akan diperbarui setelah
-            dikonfirmasi oleh pemilik UMKM.
-          </p>
+            usaha kami.</p>
           <div class="hero-actions">
             <a class="button" href="#produk">Jelajahi Katalog</a>
             <a class="button button-outline" href="#tentang">Tentang Usaha</a>
           </div>
         </div>
-
-        <div class="hero-art" role="img"
-             aria-label="Area visual identitas Ani & Datuak">
+        <div class="hero-art" role="img" aria-label="Area visual identitas Ani &amp; Datuak">
           <div>
-            <strong>Ani & Datuak</strong>
-            <p>RUANG UNTUK IDENTITAS VISUAL DAN FOTO ASLI USAHA</p>
+            <strong>Ani &amp; Datuak</strong>
+            
           </div>
         </div>
       </div>
     </section>
-
     <section class="section" id="produk">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Koleksi kami</p>
-          <h2>Katalog Produk</h2>
-          <p>
-            Cari produk berdasarkan nama atau kategori.
-            Informasi produk asli akan ditambahkan setelah diverifikasi.
-          </p>
+          <h2 class="">Katalog Produk</h2>
+          <p class="">Temukan koleksi busana adat, kebaya, songket, dan aksesori warisan budaya Minangkabau pilihan Ani &amp; Datuak.</p>
         </div>
-
         <div class="catalog-tools">
-          <input
-            class="search-box"
-            id="searchInput"
-            type="search"
-            placeholder="Cari produk..."
-            aria-label="Cari produk"
-          >
+          <input class="search-box" id="searchInput" type="search" placeholder="Cari produk..." aria-label="Cari produk">
         </div>
-
         <div class="filters" id="filterButtons">
           <button class="filter-button active" data-category="semua">
             Semua Produk
@@ -595,80 +492,339 @@
             Lainnya
           </button>
         </div>
+        <style class="">
+  #productGrid.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+  }
+  @media (max-width: 1024px) {
+    #productGrid.product-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 640px) {
+    #productGrid.product-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+  }
+  .card-thumb {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    overflow: hidden;
+    background: #eee4d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .thumb-placeholder {
+    border: 1px dashed #bca57e;
+    padding: 16px;
+    width: 85%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    color: var(--maroon);
+  }
+  .thumb-placeholder span {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  .card-cta {
+    margin-top: 12px;
+  }
+  .card-cta .button {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 13px;
+    display: block;
+  }
+</style><div class="product-grid" id="productGrid"><!-- Card 1 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAouePxgjsYj6K-0CZf_VJGogSgcaiuq32nSPC35BMfUIjv_X_oySZ1cghxNp5ICkjhFB-A0VH6nlR9hCJDvBizKp5MEGeBDrYGb7RSq-Hd4A_uqoI8o07YnP6u2a-tSRvam_K_ZFWNn9eYm9pmEbZhpuiB_VTMCZ9eSWfe9D6y-EdevzNUFG1BH7R1qitN9_tUzJgHD6DjbbY2yywrAn-Qzq6_J_FN2M6GXDznkOLIszNPj015DI0S8Vhwtt5ZLoxaphTmPozA79hP04E" alt="Baju Kurung Sulam Maroon" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Mukena Motif Sakura Putih</h3>
+    <p class="">Busana Baju Kurung Minang berwarna deep-maroon dengan sulaman benang emas khas dan selendang sutra senada.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Baju%20Kurung%20Sulam%20Maroon" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
 
-        <div class="product-grid" id="productGrid">
-          <article class="product-card" data-category="pakaian">
-            <div class="product-photo">
-              <div class="photo-placeholder">
-                <span>◇</span>
-                FOTO PRODUK ASLI
-                <br>Menunggu dari pemilik UMKM
-              </div>
-            </div>
-            <div class="product-info">
-              <div class="product-category">Pakaian</div>
-              <h3>Produk akan ditambahkan</h3>
-              <p>
-                Nama, deskripsi, dan detail produk menunggu konfirmasi.
-              </p>
-              <span class="price-pending">Harga menunggu konfirmasi</span>
-            </div>
-          </article>
+<!-- Card 2 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmA4dSHg8dV3AHTkCy7EBwnSTexabXALn_dQhBh10jKZoLxtNMd6wHoOmjhpkC3adY1jNwoRp4t8EW4017awYmM-jS5f9Sullay2o_GSZFkn-c_OrYKiVg4V1zkJFT78yPeEZD76Cu6A0rAdchkwznrldBEdO7EjTLW3q-hTGa5Orl8aNMLpTiAOoYuQ_sltWgSFuS5u_h3dkYTTZNw2JIO8QBbFLHLGky7XuL1WYJZrS4e5s4UZHV_arGGGti1zYaKVfIyzFSF8-8IQU" alt="Bundo Kanduang Beludru Hitam" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Bundo Kanduang Beludru Hitam</h3>
+    <p class="">Setelan busana adat Bundo Kanduang berbahan beludru hitam dengan tepian songket emas dan tengkuluk tanduk anggun.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Bundo%20Kanduang%20Beludru%20Hitam" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
 
-          <article class="product-card" data-category="aksesoris">
-            <div class="product-photo">
-              <div class="photo-placeholder">
-                <span>◇</span>
-                FOTO PRODUK ASLI
-                <br>Menunggu dari pemilik UMKM
-              </div>
-            </div>
-            <div class="product-info">
-              <div class="product-category">Aksesori</div>
-              <h3>Produk akan ditambahkan</h3>
-              <p>
-                Nama, deskripsi, dan detail produk menunggu konfirmasi.
-              </p>
-              <span class="price-pending">Harga menunggu konfirmasi</span>
-            </div>
-          </article>
+<!-- Card 3 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCefItnnZLyAAyPEUZuV4TRNOY5viwzsYXhhYTYBr3EmcPdSPqbdgIYQUAgl-jEjgMyRYRmbmt18sGPt07iGC_oTlkPM3ih6u5wiUt_Wo-hLSNzsplWrUggfvA32rmpkbBV8mrULvWPwuw_lCzspHx9k4ZJlINhmD6Fb7alRfqoiiPTUHM-ZcxzhteWsP6ttG36Np23JRY8ZwKTtpTB-hCxad4RP-c-KCwQuTlbpji0IGG-L0fKUf42CWsvpvGdaGBbeiY118LCi_AH1o4" alt="Kebaya Bordir Merah Emas" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Kebaya Bordir Merah Emas</h3>
+    <p class="">Kebaya Minangkabau merah mewah bertabur bordir emas floral dipadu selendang songket tenun berkilau.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Kebaya%20Bordir%20Merah%20Emas" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
 
-          <article class="product-card" data-category="lainnya">
-            <div class="product-photo">
-              <div class="photo-placeholder">
-                <span>◇</span>
-                FOTO PRODUK ASLI
-                <br>Menunggu dari pemilik UMKM
-              </div>
-            </div>
-            <div class="product-info">
-              <div class="product-category">Lainnya</div>
-              <h3>Produk akan ditambahkan</h3>
-              <p>
-                Nama, deskripsi, dan detail produk menunggu konfirmasi.
-              </p>
-              <span class="price-pending">Harga menunggu konfirmasi</span>
-            </div>
-          </article>
-        </div>
+<!-- Card 4 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtLvXqEHvO_lbgoFjF7-CLLIPAQENfTWvRp2VUEKbXSuBx8NIMPOhnokXHXkQPdy7iDa1JkJmcV_U1wbbts48_9HxQE8Bgx97k4q9ffH7cCXTc0uh8a6vWmEvDKBQAP1CYzF3x0apbnOMGPmUmfRquLENJpd75rceVMqWuUplY3E8telQgJKjKpoYSod9YCp-BZBlVoFXDdw1_pbwolyHqINeE9922iGRRehukTy6azGqJww3LrBC6AnZbH84n9DxUazPBEqv5UmBoTHQ" alt="Busana Songket Hitam Emas" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Busana Songket Hitam Emas</h3>
+    <p class="">Setelan songket tradisional Minang bernuansa hitam elegan dengan tenunan benang emas geometris klasik.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Busana%20Songket%20Hitam%20Emas" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 5 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX3C28ChnWKp22hb_GIWqqIEKa533URC-45pdm8qcy5NxWZNfJ17jDzIVNfYR5zYH_CZQiwFcYJKYoSA0DXhVcasdoodY8oHV6IRDQhlNt-igTjrd72jNkV58iP33S238pPJMH8aBk0y2k5LPcTGjYO8v9IY_nNZzkk1X0izef1jWyEtGf8EYpMF5u1Lc_63pBupGLBUqxuIe4gsaOopCyc4pwJG9UIcFJ5m0RfOCw5cl5QuVAEXqCA42IEbtYTEswB6CWoAzleDFLqwE" alt="Baju Kurung Pastel Dusty Pink" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Baju Kurung Pastel Dusty Pink</h3>
+    <p class="">Baju Kurung berona lembut dusty-pink berhias sulaman floral sampanye dengan selendang sifon anggun.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Baju%20Kurung%20Pastel%20Dusty%20Pink" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 6 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRTiiVo_FNVVbsEv0JXA3KjHS34WblTU4D9E7OrrqnO1_ftNgbJy9C9ZFe3FcFwSeTGEHgI7Jpn0tjw-Ql_OVlQO7OugdNTzljRNy4xCUbuppyJx7Y9K99IW_2Me4YR1453_CLuSzBaGsNjskC7QgrOWVuS3LWS3d76OTU7OqRlBNc7frYpCl9WWoF_w3b98E2Swyg6OTxHLKZnPhrHbI6cOQKJEJBnwfWHsD2f113" alt="Busana Pengantin Minang Suntiang" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Busana Pengantin Minang Suntiang</h3>
+    <p class="">Busana pengantin tradisional Minangkabau warna merah berpadu hiasan suntiang emas megah bertingkat.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Busana%20Pengantin%20Minang%20Suntiang" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 7 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzw6urWFDxxDsFltqoFT6KfWzcYf_xS8739RuvJvyMBcGBYntQIboXHSaIvXJc--0Blk_1Xga1flH1AsAX38_-uC9HSj3MqnUIcnAx74MdM4esk8ZPkTEjvDUjs2lsBW_b7lu9ajUk4fi8nW5KxqikJGpTe4YlFWN_NJfjJcEA8OS9KL6oWQrQwkzBY2B5tyclkAUxelFav3okGHBXb7ofjpQEgGmUHmmeNPaSpvw8" alt="Kebaya Modern Ivory Songket" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Kebaya Modern Ivory Songket</h3>
+    <p class="">Perpaduan kebaya modern warna gading dan champagne dengan bawahan songket tenun benang perak keemasan.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Kebaya%20Modern%20Ivory%20Songket" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 8 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvabXASK6Q4YgGZTkbtMAxJ56H9ou3mXIc57RlCL_hrF5H7K7FIYj62Srn03CqAnTMdePHQGfMACa2sPT7fupqbPYfUmXZKstlgkF39Gfgakx2tMrfztoy4xuI8ieY87k6CR8HnvyA5MkG2EEO8nPmlt8RkMxa81-Isev5rL0pzx3T2ZqPs1NX0RX1ErxEMon9XvoWN9jyRBGneymDo0Giqr6JNJtoN4uSpQmLuq5W" alt="Setelan Adat Deta Maroon" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Setelan Adat Deta Maroon</h3>
+    <p class="">Busana Minangkabau merah pekat dengan aksen lipatan Deta tradisional serta ornamen kalung etnik kuno.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Setelan%20Adat%20Deta%20Maroon" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 9 -->
+<article class="product-card" data-category="aksesoris">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFFmO-byDh-nKndBENVoK7f4bjxX2rUqYLKKzNcwBMX8Lj8aAO6vjcuH47-mK8gI4suZ1EK-KVszPMtsJKEKjtycw_jydApuUmX96xrFBrvGe1ECpgS0ROPyYSFpopU4DPPNdep8EvzXe_SEg6hIWWdBzoxRaF93V1catFoStZmrw7KOa8W9Ph7OOHHLlKZsUT-T5dJA3rLtyxE1cQKM0tNqncDj_UiRykPg6s8uCh" alt="Selendang Songket Pandai Sikek" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Aksesori</span>
+    <h3 class="">Selendang Songket Pandai Sikek</h3>
+    <p class="">Selendang tenun sutra merah maroon dengan motif Pandai Sikek benang emas murni yang mewah.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Selendang%20Songket%20Pandai%20Sikek" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 10 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3zzG6itp-o4sLwHgAbDGD81m0lK-9HYXO_zp1ruRVgDmmUKyAZg14SVM8WQYhhasY8l1hyjIIUMamm63enJ3pW-zDc-4OnqgbLKb6ThvYL1lEHpJgMwp6yT6UEikMKjOsuZCJhBDEGJdFqJF9zAaPnEjZJqI3RXPOixG8g066lBCpmCabaI9iFqckE38dXlU38BqkAs6L-3WXW_lMuQRRUKO3IItN2B_TescEPNOh" alt="Baju Kurung Ungu Songket Emas" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Baju Kurung Ungu Songket Emas</h3>
+    <p class="">Busana kurung sutra ungu bangsawan diperkaya tepian brokat emas floral dan kain songket serasi.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Baju%20Kurung%20Ungu%20Songket%20Emas" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 11 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfkF1jngom1Y0yh9VtwFVyWj5UrSRdeIAn7nS43cFpm1N7I0qhN-NZ4i0He8VrjkAi-IYvsNmZrBy7V_tUdw68BP-nGB8OrgnbroSFFjnPB4tfNjoeH8_z32QBgjSrPB_CH9cQOZTDxCp7IoCRLFPwCfSLvreQ1ru8eXsjNORArLsg9710Y0LOtUWPweKnKCSZxdINx8PFwO8IHstkertYlt4d-vNYAc5p9lKhfMKj" alt="Tunik Etnik Asimetris Hitam" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Tunik Etnik Asimetris Hitam</h3>
+    <p class="">Tunik kontemporer modern Minang warna hitam berpadu panel songket miring diagonal bernuansa dinamis.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Tunik%20Etnik%20Asimetris%20Hitam" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 12 -->
+<article class="product-card" data-category="aksesoris">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAvKwnZq4his53XSDF5K2f1V3wM9iQhmkx2oeo0meNnWVFar-MVtBvRh4WhYlWDQk-Unm5cPqNYh1kUuqKk3XESbqBHPgzwgemDdq1fY364wfCbRNDdbqdF20JBQTEaFSrpxk5MrCTjlXrK0puosZmuMmF9_GsGQ4rbUb1PZhg7tyrzF0CM1pAqtOgG9BSJ6b2L6YE58yXwlYJwerNDCgX9q43ydxnJXjdsv64go4u" alt="Set Perhiasan Emas Minangkabau" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Aksesori</span>
+    <h3 class="">Set Perhiasan Emas Minangkabau</h3>
+    <p class="">Kalung gadang bertingkat, anting filigri emas, dan hiasan kepala tradisional Minang berlapis emas.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Set%20Perhiasan%20Emas%20Minangkabau" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 13 -->
+<article class="product-card" data-category="aksesoris">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuASEQv9NRP5AuQsP-HhhnN2F3Q-SBaC-J5xCVTss6tnQi-w-t-28ll2VfIHVtUufRub7pcH8J9sRYlaQt79C7KRKtGHh6tM8-JEPEk25etdUvwAe-IKRBpJiibCD8JetvNOtcONrioJ37l0g-paBaiUyiTxrTiE7v4XRNhyZh9MrVt5jwVAp8CUUkwpEAMt-B3Xdp_xrEzAri4am4CR7Ad8lZ6K7uMRnmKpDndVW2aw" alt="Clutch Pesta Songket Tenun" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Aksesori</span>
+    <h3 class="">Clutch Pesta Songket Tenun</h3>
+    <p class="">Tas tangan pesta eksklusif berbalut kain tenun songket Minangkabau merah emas berhias manik mutiara.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Clutch%20Pesta%20Songket%20Tenun" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 14 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAebLrHSgfyPfbNY_TgJv3L7NnfD6LJpmnPNp5DGrKBxUGUL5QvQAYTLtJPQnEhAhY2fvX54G-btFpBRr6JCAYOYSdyLRBsHH0fo0n0EINviTYkY8HT5PrHhbVXhNuAi4PqVutJt0LFycBasucwXzx8WF_3Inh6uRDEA0m_xeuaaP73iLvE6j-oerDCm4URXjPU5HvkwG50rYGMA-2vj1TnxtQC6_hUgoRQ8Pd3ITbi" alt="Busana Upacara Adat Salempang" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Busana Upacara Adat Salempang</h3>
+    <p class="">Setelan busana formal Minangkabau lengkap dengan salempang selempang songket dan keris hiasan tradisi.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Busana%20Upacara%20Adat%20Salempang" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article>
+
+<!-- Card 15 -->
+<article class="product-card" data-category="pakaian">
+  <div class="card-thumb">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbH4_Grs4Fe2zJgYj8zgHSzFjQaqwgCM6GORyRfxHddJtYB99w0VSMRtngL8su84vffCxkhpAmPLs7hLgaTyokhlCEXIyijsoNcDJ6Vfdm-lUd7Ag8QQsFWdPPJnUT_t0g_nuIA7m97x4yZ21YOlgIEaaHg5KA-Zrf1QWFz8kMTf16j2bzZ4R64T4aqojFIIW7nEQYU2AgkcJVX6BP-Ag6Vf-0khYMarCFHZ2tOB0E" alt="Busana Pengantin Zamrud Suntiang" loading="lazy">
+  </div>
+  <div class="product-info">
+    <span class="product-category">Pakaian</span>
+    <h3 class="">Busana Pengantin Zamrud Suntiang</h3>
+    <p class="">Gaun pengantin Minangkabau nuansa hijau zamrud berbalut benang emas dan mahkota suntiang megah bertingkat sembilan.</p>
+    <span class="price-pending">Harga menunggu konfirmasi</span>
+    <a href="https://wa.me/?text=Halo%20Ani%20%26%20Datuak%2C%20saya%20tertarik%20dengan%20Busana%20Pengantin%20Zamrud%20Suntiang" target="_blank" rel="noopener noreferrer" class="wa-btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.16 7.42C8.98 7.42 8.78 7.49 8.6 7.69C8.42 7.89 7.85 8.43 7.85 9.51C7.85 10.6 8.64 11.66 8.75 11.81C8.86 11.96 10.28 14.24 12.5 15.15C14.35 15.91 14.73 15.76 15.13 15.72C15.54 15.68 16.45 15.18 16.63 14.66C16.81 14.15 16.81 13.71 16.76 13.62C16.71 13.53 16.57 13.48 16.35 13.37C16.14 13.26 15.08 12.74 14.88 12.67C14.68 12.6 14.54 12.56 14.39 12.78C14.25 13 13.84 13.48 13.72 13.62C13.59 13.77 13.47 13.79 13.25 13.68C13.04 13.57 12.33 13.34 11.5 12.59C10.84 12.01 10.4 11.29 10.27 11.07C10.15 10.86 10.26 10.74 10.37 10.63C10.47 10.53 10.59 10.38 10.7 10.25C10.81 10.12 10.85 10.03 10.92 9.89C11 9.74 10.95 9.61 10.89 9.5C10.84 9.39 10.4 8.3 10.21 7.86C10.03 7.42 9.85 7.48 9.71 7.47C9.57 7.46 9.37 7.42 9.16 7.42Z"></path></svg>
+      Pesan via WhatsApp
+    </a>
+  </div>
+</article></div><script class="">
+  if (typeof products !== 'undefined' && typeof productGrid !== 'undefined') {
+    products.length = 0;
+    productGrid.querySelectorAll('.product-card').forEach(card => products.push(card));
+  }
+</script>
       </div>
-    </section>
-
+    <div id="catalogCustomStyles"><style>#productGrid.product-grid, .product-grid { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 24px !important; } .card-thumb { aspect-ratio: 1 / 1; width: 100%; overflow: hidden; background: #eee4d5; display: flex; align-items: center; justify-content: center; } .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; } .thumb-placeholder { width: 100% !important; height: 100% !important; border: 1px dashed #bca57e; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 14px; text-align: center; box-sizing: border-box; } .ph-symbol { font-size: 24px; color: #c8a45d; line-height: 1; margin-bottom: 4px; } .ph-text { font-size: 13px; color: #554a43; line-height: 1.3; } .product-card { display: flex; flex-direction: column; background: #fffdf9; border: 1px solid #e9dfd0; border-radius: 6px; overflow: hidden; } .product-info { display: flex; flex-direction: column; flex: 1; padding: 18px; } .product-info h3 { font-size: 19px; margin-bottom: 8px; } .product-info p { flex: 1; color: #746c65; font-size: 13px; margin-bottom: 12px; } .price-pending { display: inline-block; background: #f3ead8; color: #735c31; border-radius: 3px; padding: 5px 9px; font-size: 12px; width: fit-content; margin-bottom: 14px; } .wa-btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; background: #1e6f43; color: #ffffff !important; padding: 11px 16px; border-radius: 6px; font-weight: bold; font-size: 13px; text-decoration: none; box-sizing: border-box; transition: background 0.2s; } .wa-btn:hover { background: #145230; } .wa-btn svg { width: 18px; height: 18px; fill: #ffffff; flex-shrink: 0; } @media (max-width: 900px) { #productGrid.product-grid, .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 16px !important; } } @media (max-width: 600px) { #productGrid.product-grid, .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 12px !important; } .wa-btn { font-size: 11px; padding: 9px 8px; } .product-info { padding: 12px; } .product-info h3 { font-size: 15px; } }</style></div></section>
     <section class="section about" id="tentang">
       <div class="container about-grid">
         <div class="about-mark">
-          <strong>A&D</strong>
-          <span>ANI & DATUAK</span>
+          <strong>A&amp;D</strong>
+          <span class="">ANI &amp; DATUAK</span>
         </div>
-
         <div>
           <p class="eyebrow" style="color: var(--gold)">
             Mengenal lebih dekat
           </p>
-          <h2>Cerita Ani & Datuak</h2>
-          <p>
+          <h2 class="">Cerita Ani &amp; Datuak</h2>
+          <p class="">
             Bagian ini akan menjelaskan profil, perjalanan usaha,
-            nilai budaya, dan keunikan Ani & Datuak berdasarkan
+            nilai budaya, dan keunikan Ani &amp; Datuak berdasarkan
             informasi langsung dari pemilik usaha.
           </p>
           <div class="pending-note">
@@ -678,51 +834,42 @@
         </div>
       </div>
     </section>
-
     <section class="section" id="kontak">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Terhubung dengan kami</p>
-          <h2>Informasi & Kontak</h2>
-          <p>
-            Detail kontak dan lokasi resmi akan dimasukkan setelah
-            dikonfirmasi oleh pemilik Ani & Datuak.
-          </p>
+          <h2 class="">Informasi &amp; Kontak</h2>
+          <p class="">Temukan koleksi busana adat, kebaya, songket, dan aksesori warisan budaya Minangkabau pilihan Ani &amp; Datuak.</p>
         </div>
-
         <div class="contact-grid">
           <div class="contact-card">
             <div class="symbol">✆</div>
-            <h3>WhatsApp</h3>
-            <p>Nomor WhatsApp bisnis menunggu konfirmasi.</p>
+            <h3 class="">WhatsApp</h3>
+            <p class="">Nomor WhatsApp bisnis menunggu konfirmasi.</p>
           </div>
-
           <div class="contact-card">
             <div class="symbol">⌖</div>
-            <h3>Lokasi Usaha</h3>
-            <p>Alamat dan tautan peta menunggu konfirmasi.</p>
+            <h3 class="">Lokasi Usaha</h3>
+            <p class="">Alamat dan tautan peta menunggu konfirmasi.</p>
           </div>
-
           <div class="contact-card">
             <div class="symbol">◇</div>
-            <h3>Media Sosial</h3>
-            <p>Akun resmi usaha menunggu konfirmasi.</p>
+            <h3 class="">Media Sosial</h3>
+            <p class="">Akun resmi usaha menunggu konfirmasi.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-
   <footer>
     <div class="container footer-row">
       <div>
-        <div class="footer-brand">Ani & Datuak</div>
-        <p>Katalog digital untuk mendukung UMKM.</p>
+        <div class="footer-brand">Ani &amp; Datuak</div>
+        <p class="">Katalog digital untuk mendukung UMKM.</p>
       </div>
-      <p>© <span id="year"></span> Ani & Datuak</p>
+      <p class="">© <span id="year" class="">2026</span> Ani &amp; Datuak</p>
     </div>
   </footer>
-
   <script>
     const searchInput = document.getElementById("searchInput");
     const filterButtons = document.querySelectorAll(".filter-button");
@@ -730,32 +877,23 @@
     const products = Array.from(
       productGrid.querySelectorAll(".product-card")
     );
-
     let selectedCategory = "semua";
-
     function filterProducts() {
       const keyword = searchInput.value.toLowerCase().trim();
       let visibleCount = 0;
-
       products.forEach((product) => {
         const text = product.textContent.toLowerCase();
         const category = product.dataset.category;
-
         const matchesKeyword = text.includes(keyword);
         const matchesCategory =
           selectedCategory === "semua" ||
           category === selectedCategory;
-
         const visible = matchesKeyword && matchesCategory;
         product.hidden = !visible;
-
         if (visible) visibleCount++;
       });
-
       const oldMessage = productGrid.querySelector(".empty-result");
-
       if (oldMessage) oldMessage.remove();
-
       if (visibleCount === 0) {
         const message = document.createElement("p");
         message.className = "empty-result";
@@ -764,23 +902,26 @@
         productGrid.appendChild(message);
       }
     }
-
     searchInput.addEventListener("input", filterProducts);
-
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
         selectedCategory = button.dataset.category;
-
         filterButtons.forEach((item) => {
           item.classList.toggle("active", item === button);
         });
-
         filterProducts();
       });
     });
-
     document.getElementById("year").textContent =
       new Date().getFullYear();
   </script>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+</body></html>
